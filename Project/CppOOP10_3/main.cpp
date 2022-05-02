@@ -3,33 +3,45 @@
 #include <numeric>
 #include <range/v3/all.hpp>
 
+// git clone https://github.com/Microsoft/vcpkg.git
+// .\vcpkg\bootstrap-vcpkg.bat
+// vcpkg integrate install
+// .\vcpkg.exe install range-v3
+// 언어팩 영어 필수
+
+
+// iterater 까지 더 추상화하여 간편하게 사용하게 만듬
+// 
 
 int main()
 {
 
-    {
-        // sort 비교
-        std::vector<int> v{ 3, 2, 1 };
+    //{
+    //    // sort 비교
+    //    std::vector<int> v{ 3, 2, 1 };
 
-        std::sort(v.begin(), v.end());
-        ranges::sort(v);
+         //std::sort(v.begin(), v.end());
+         //ranges::sort(v);
 
-        for (int& i : v)
-            std::cout << i << std::endl;
-        std::cout << std::endl;
-    }
-    {
-        // find 비교
-        std::vector<int> v(10);
-        std::iota(v.begin(), v.end(), 0);
+    //    for (int& i : v)
+    //        std::cout << i << std::endl;
+    //    std::cout << std::endl;
+    //    return 0; 
+    //}
+    //{
+    //    // find 비교
+    //    std::vector<int> v(10);
+    //    std::iota(v.begin(), v.end(), 0);
 
-        auto iter = ranges::find(v, 3);
-        std::cout << *iter << std::endl;
+    //    auto iter = ranges::find(v, 3);
+    //    std::cout << *iter << std::endl;
 
-        iter == std::find(v.begin(), v.end(), 3);
-        std::cout << *iter << std::endl;
-        std::cout << std::endl;
-    }
+    //    //iter == std::find(v.begin(), v.end(), 3);
+    //    //std::cout << *iter << std::endl;
+    //    //std::cout << std::endl;
+
+    //    return 0; 
+    //}
     {
         // view, lazy evaluation
         // 0 ~ 9까지 출력

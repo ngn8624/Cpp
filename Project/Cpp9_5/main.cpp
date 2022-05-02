@@ -1,4 +1,7 @@
+//참조로 전달
+
 #include <iostream>
+#include <stdio.h>
 
 using namespace std;
 
@@ -59,8 +62,8 @@ int main()
         int x = 10, y = 20;
         swap0(x, y);
 
-        cout << x << endl;
-        cout << y << endl;
+        cout << "swap0 : " << x << endl;
+        cout << "swap0 : " << y << endl;
     }
 
     {
@@ -85,6 +88,9 @@ int main()
     {
         int num;
         cin >> num; // num을 레퍼런스로 넘겨주기 때문에 scanf처럼 num의 주소로 넘겨주지 않아도 된다
+        int num2;
+        cout << "==" << endl;
+        scanf_s("%d", &num2);
     }
     {
         int nums[] = { 1, 2, 3, 4 };
@@ -116,5 +122,11 @@ int main()
     {
         Weapon weapon{ 10, 20 };
         func1(weapon) = 30; // 이런 것도 된다
+        cout << "weapon.power" << weapon.power << endl;
+        cout << "weapon.price" << weapon.price << endl;
+
+        weapon.power = 50;
+        cout << "weapon.power" << weapon.power << endl;
+        cout << "weapon.price" << weapon.price << endl;
     }
 }

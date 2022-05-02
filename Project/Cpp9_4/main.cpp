@@ -1,3 +1,5 @@
+//주소로 전달
+
 #pragma warning(disable: 4996)
 #include <iostream>
 

@@ -1,3 +1,5 @@
+//Å¬·¡½º °³°ý
+
 #pragma warning(disable:4996)
 #include <iostream>
 #include <string>

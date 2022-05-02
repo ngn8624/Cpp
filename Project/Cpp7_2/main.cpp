@@ -1,3 +1,5 @@
+//포인터 - 배열과의 관계
+
 #include <iostream>
 
 using namespace std;

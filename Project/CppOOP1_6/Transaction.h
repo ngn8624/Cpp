@@ -53,4 +53,7 @@ void buildTransaction()
 {
     Transaction::Builder builder;
     Transaction tx = builder.build();
+
+    Transaction tx1 = Transaction::Builder().setFromID(1234).setToID(1234).setValue(1234).build();
+    cout << tx1.txID << endl;
 }

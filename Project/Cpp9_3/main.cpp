@@ -1,3 +1,5 @@
+//값으로 전달
+
 #include <iostream>
 
 using namespace std;
@@ -35,24 +37,24 @@ Weapon upgrade1(Weapon weapon)
 int main()
 {
     {
-        // swap을 inline으로 수행
+        // swap을 inline으로 수행 // 함수 호출 시 별도로 분리된 위치의 레이블로 점프하여 실행되는 일반 함수와는 달리 호출 부분을 함수 전체 코드로 치환하여 컴파일한다.
         int x = 10, y = 20;
-        cout << "x : " << x << endl;
-        cout << "y : " << y << endl;
+        cout << "x1 : " << x << endl;
+        cout << "y1 : " << y << endl;
 
         int temp = x;
         x = y;
         y = temp;
 
-        // 값이 바뀌지 않음
-        cout << "x : " << x << endl;
-        cout << "y : " << y << endl;
+        // 값이 바뀜
+        cout << "x1 : " << x << endl;
+        cout << "y1 : " << y << endl;
     }
 
     {
         int x = 10, y = 20;
-        cout << "x : " << x << endl;
-        cout << "y : " << y << endl;
+        cout << "x2 : " << x << endl;
+        cout << "y2 : " << y << endl;
 
         //cout << "x addr : " << &x << endl;
         //cout << "y addr : " << &y << endl;
@@ -62,13 +64,14 @@ int main()
         //cout << "x addr : " << &x << endl;
         //cout << "y addr : " << &y << endl;
 
-        cout << "x : " << x << endl;
-        cout << "y : " << y << endl;
+        // 값이 바뀌지 않음
+        cout << "x2 : " << x << endl;
+        cout << "y2 : " << y << endl;
     }
     {
         int x = 10, y = 20;
-        cout << "x : " << x << endl;
-        cout << "y : " << y << endl;
+        cout << "x3 : " << x << endl;
+        cout << "y3 : " << y << endl;
 
         // swap0 풀어쓰기
         int px = x;
@@ -78,8 +81,11 @@ int main()
         px = py;
         py = temp;
 
-        cout << "x : " << x << endl;
-        cout << "y : " << y << endl;
+        cout << "x3 : " << x << endl;
+        cout << "y3 : " << y << endl;
+
+        cout << "px3 : " << px << endl;
+        cout << "py3 : " << py << endl;
     }
     {
         Weapon weapon{ 10, 20 };

@@ -1,3 +1,5 @@
+//참조
+
 #include <iostream>
 #include <vector>
 
@@ -8,7 +10,7 @@ int main()
 {
     {
         int num0 = 10;
-        int& num1 = num0;  // 참조
+        int& num1 = num0;  // 참조 // c++ 
         int* num2 = &num0; // 포인터
 
         cout << num0 << endl;
@@ -38,6 +40,8 @@ int main()
         int num0 = 10;
         // 초기화 할 때 가리키는 녀석이 고정 됨, 바꿀 수 없음
         int& num1 = num0;
+ 
+        
 
         int num2 = 20;
 

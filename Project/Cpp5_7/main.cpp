@@ -1,3 +1,5 @@
+// goto¹®
+
 #include <iostream>
 
 using namespace std;

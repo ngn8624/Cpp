@@ -1,3 +1,5 @@
+//range-based- for
+
 #include <iostream>
 #include <array>
 
@@ -30,13 +32,13 @@ int main()
         array<int, 5> nums = { 1, 2, 3, 4, 5 };
         for (int i = 0; i < 5; ++i)
         {
-            cout << nums[i] << endl;
+            cout << "기존 출력 방법 : " << nums[i] << endl;
         }
 
         // Range based for
         for (int num : nums)
         {
-            cout << num << endl;
+            cout << "Range based for : " << num << endl;
         }
     }
     {

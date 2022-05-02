@@ -37,56 +37,16 @@
     <ClCompile Include="Item.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Score.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Value.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Board.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Consts.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Score.h">
+    <ClInclude Include="Board.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Values.h">
+    <ClInclude Include="Item.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <QtMoc Include="Item.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="PNG\15.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="PNG\3.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="PNG\5.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="PNG\6.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="PNG\7.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="PNG\11.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="PNG\13.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="PNG\14.png">
-      <Filter>Resource Files</Filter>
-    </Image>
   </ItemGroup>
 </Project>

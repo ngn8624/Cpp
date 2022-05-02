@@ -1,3 +1,8 @@
+// 포인터 - 동적 할당
+// 자주 변하지 않는 일정한 값이나 설정 정보같은 공용자원에 대한 접근에 있어서 매번 메모리에 로딩하거나 값을 읽어들이는 것보다 일종의 '전역변수'와 같은 개념을 통해서 접근하는 것이 비용도 줄이고 효율을 높일 수있다. 
+// 인스턴스 생성 없이 바로 사용가능 하기 때문에 프로그램 내에서 공통으로 사용되는 데이터들을 관리 할 때 이용한다
+
+
 #include <iostream>
 
 using namespace std;
@@ -39,6 +44,8 @@ int main()
         //}
     }
     {
+        //크기
+        //int* pNum0 = new int[1];
         int* pNum0 = new int(123);
         int* pNum1 = pNum0;
 
@@ -91,6 +98,7 @@ int main()
         for (Person* person : persons)
         {
             person->weight = 0.0f;
+           //(*person).weight = 0.0f;
         }
         
         for (Person* person : persons)

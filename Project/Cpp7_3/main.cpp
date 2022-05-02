@@ -1,3 +1,5 @@
+// 포인터 - 문자열과의 관계
+// 상수란 변하지 않는 값을 말합니다. 상수에는 리터럴 상수와 기호 상수가 있습니다. 상수와 변수의 차이점은 상수는 상수값이 변할 수 없지만, 변수는 변할 수 있습니다
 #pragma warning(disable: 4996)
 #include <iostream>
 #include <cstring>
@@ -18,7 +20,8 @@ int main()
     {
         // 문자열 리터럴
         const char* str2 = "hello";
-        cout << str2 << endl;
+        cout << "str2 " << str2 << endl;
+        cout << "*str2 " << *str2 << endl;
 
         cout << typeid("hello").name() << endl;
     }

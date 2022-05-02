@@ -1,3 +1,5 @@
+// const
+
 #include <iostream>
 
 using namespace std;
@@ -18,7 +20,7 @@ public:
     }
 
     float getWeight(/* const Person* this */) const
-    {
+    { 
 
         // const가 붙은 멤버 함수에서의 this 포인터의 타입
         // const Person*

@@ -1,3 +1,5 @@
+//비트 연산자 오버로딩
+
 #pragma warning(disable: 4996)
 #include <iostream>
 #include <cstring>

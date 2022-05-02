@@ -1,3 +1,5 @@
+//재귀함수
+
 #include <iostream>
 
 using namespace std;
@@ -15,6 +17,7 @@ void count(int n)
 
 
 // 점화식은 재쉬 함수로 표현 할 수 있다.
+// 점화식(漸化式)은 수열에서 이웃하는 두개의 항 사이에 성립하는 관계를 나타낸 관계식
 // fac(1) = 1
 // fac(n) = n * a(n - 1)
 int fac(int n)

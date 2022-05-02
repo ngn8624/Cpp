@@ -1,3 +1,8 @@
+// enum
+// enum은 순서대로 배열하고 struct는 일치되지 않은 여러 형태의 매개변수를 쓸 수 있는 것이 유용
+// enum class는 형 변환이 기존보다 제약적이 되어 개발자의 실수로 발생할 버그를 방지하고자 하는 점과 기존의 enum이 가지고 있던 스코프 문제를 해결
+// unscoped enum의 경우에는 전방선언을 할 수 없었지만 scoped enum의 경우 이게 가능해지면서 소스 파일간의 dependency를 줄여서 헤더 파일을 약간 수정함으로써 생기는 많은 소스 코드의 재컴파일을 줄일 수 있다는 장점
+
 #include <iostream>
 
 using namespace std;
@@ -5,7 +10,7 @@ using namespace std;
 enum Color
 {
     // 값을 지정해주지 않으면 첫 번쨰는 0이 되고 이후로 1씩 증가
-    Red, Green, Blue, SIZE
+    Red, Green, Blue, SIZE 
 };
 
 struct ColorStruct
@@ -96,7 +101,7 @@ int main()
         cout << avg1 << endl;
     }
     {
-        // BitFlag 사용
+        // BitFlag 사용 // bitset 클래스
         int textAttrs = 0;
         textAttrs |= Bold;
         textAttrs |= Underline;

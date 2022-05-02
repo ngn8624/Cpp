@@ -1,3 +1,5 @@
+//for
+
 #include <iostream>
 
 using namespace std;
@@ -76,7 +78,7 @@ int main()
             if (i % 3 == 0)
                 continue;
 
-            cout << i << endl;
+            cout << "continue :  " << i << endl;
         }
     }
     {

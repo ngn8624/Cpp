@@ -1,3 +1,5 @@
+// 디폴트 매개변수
+
 #include <iostream>
 
 using namespace std;

@@ -1,3 +1,5 @@
+//struct
+
 #include <iostream>
 #include <cstring>
 
@@ -37,12 +39,12 @@ int main()
     }
     {
         // 이름으로 초기화. C++ 2x 이상
-        Person person{ .height = 174.2f, .weight= 67.8f, .name= "David", .grade=1 };
+        //Person person{ .height = 174.2f, .weight= 67.8f, .name= "David", .grade=1 };
 
-        cout << person.height << endl;
-        cout << person.weight << endl;
-        cout << person.grade << endl;
-        cout << person.name << endl;
+        //cout << person.height << endl;
+        //cout << person.weight << endl;
+        //cout << person.grade << endl;
+        //cout << person.name << endl;
     }
     {
         // struct 를 멤버 변수로 가지기
@@ -94,6 +96,8 @@ int main()
         cout << persons[2].grade << endl; // 5
     }
     {
+
+        cout << "=========================== << endl;
         // strcut 의 사이즈
         struct Person0
         {

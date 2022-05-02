@@ -1,3 +1,5 @@
+//호출 연산자 오버로딩, 함수 객체
+
 #pragma warning(disable: 4996)
 #include <iostream>
 

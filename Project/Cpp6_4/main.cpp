@@ -1,3 +1,5 @@
+// string
+
 #include <iostream>
 #include <string>
 
@@ -15,6 +17,7 @@ int main()
     }
     {
         string str;
+        //getline(cin, str);
         cin >> str; // 길이 제한이 없음
     }
     {
@@ -27,6 +30,8 @@ int main()
 
         // 붙이기
         str0 += str1;
+        //str0.append(str1);
+
 
         // 사이즈 구하기
         str0.size();
@@ -36,8 +41,12 @@ int main()
         string str0("abc");
         string str1("abc");
 
-        // C 스타일 문자열 사용
-        strcmp(str0.c_str(), str0.c_str());
+        // C 스타일 문자열 사용 // 같으면 0 반환
+        int rtValue = strcmp(str0.c_str(), str0.c_str());
+            cout << "rtValue  " << rtValue << endl;
+        if (rtValue)
+            cout << "==" << endl;
+
     }
     {
         // 다른 타입을 문자열로 변환
@@ -48,6 +57,8 @@ int main()
         // 문자열을 다른 타입으로 변환
         int i = stoi("1");
         float f = stof("1.1");
+        cout << typeid(i).name() << endl;
+        cout << typeid(f).name() << endl;
     }
     {
         // 개행 문자까지 입력 받기

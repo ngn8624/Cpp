@@ -1,3 +1,5 @@
+// union
+
 #include <iostream>
 
 using namespace std;
@@ -27,9 +29,10 @@ int main()
         union ID
         {
             // integer와 chars가 메모리를 공유한다.
-            int integer;
-            char chars[10];
-        };
+            int integer; // 4
+            int integer2; //4 
+            char chars[4]; //4
+        }; //4
         struct Product
         {
             int idType;
@@ -37,7 +40,8 @@ int main()
         };
 
         Product product0 = { 0, {12} };
-        Product product1 = { 1, {.chars = "abc"} }; // C++ 2x 이상
+        Product product1 = { 1, {'abc'}};
+        //Product product1 = { 1, {.chars = "abc"} }; // C++ 2x 이상
         if (product0.idType == 0)
             cout << product0.id.integer << endl;
         else

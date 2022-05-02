@@ -1,3 +1,5 @@
+// 논리 연산자 오버로딩
+
 #pragma warning(disable: 4996)
 #include <iostream>
 #include <cstring>
@@ -59,7 +61,7 @@ public:
         return !(*this < s);
     }
 
-    strong_ordering operator<=>(const String& s) const
+    strong_ordering operator <=> (const String& s) const
     {
         int result = strcmp(_chars, s._chars);
         if (result < 0)
@@ -83,9 +85,18 @@ public:
 
 int main()
 {
-    String s0("a");
-    String s1("b");
+    //String s0("a");
+    //String s1("b");
 
-    if ((s0 <=> s1) < 0)
-        cout << "!!" << endl;
+    //if ((s0 <=> s1) < 0)
+    //    cout << "!!" << endl;
+
+
+    String s0("abc");
+    String s1("abd");
+    //String s0 = "abc";
+    //String s1 = "abd";
+    if (s0 == s1)
+        cout << "==" << endl;
+
 }

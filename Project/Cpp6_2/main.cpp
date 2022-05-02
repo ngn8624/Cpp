@@ -1,3 +1,5 @@
+// 다차원 배열
+
 #include <iostream>
 
 using namespace std;
@@ -88,7 +90,6 @@ int main()
         // 함수를 이용한 복사
         memcpy(matrix1, matrix0, sizeof(matrix0));
         copy(&matrix0[0][0], &matrix0[0][0] + 3 * 3, &matrix1[0][0]);
-
 
         for (int i = 0; i < size(matrix1); ++i)
         {

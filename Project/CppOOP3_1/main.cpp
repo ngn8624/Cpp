@@ -1,3 +1,5 @@
+//상속의 기본 개념
+
 #include <iostream>
 
 using namespace std;

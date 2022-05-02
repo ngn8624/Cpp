@@ -1,3 +1,5 @@
+// switch 문
+
 #pragma warning(disable : 4996)
 #include <iostream>
 
@@ -144,15 +146,15 @@ int main()
     {
         // switch 안에서 변수 선언 2
         // C++17 이상
-        switch (int num0, num1;int count = scanf("%d %d", &num0, &num1))
-        {
-        case 1:
-            cout << num0 << endl;
-            break;
-        case 2:
-            cout << num0 << endl;
-            cout << num1 << endl;
-            break;
-        }
+        //switch (int num0, num1; int count = scanf("%d %d", &num0, &num1))
+        //{
+        //case 1:
+        //    cout << num0 << endl;
+        //    break;
+        //case 2:
+        //    cout << num0 << endl;
+        //    cout << num1 << endl;
+        //    break;
+        //}
     }
 }

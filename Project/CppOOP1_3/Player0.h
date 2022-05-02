@@ -17,14 +17,14 @@ public:
         // 한 개의 생성자도 주어지지 않는다면 컴파일러가 암시적으로 만들어준다
         _health = 100;
         _power = 50;
-        cout << "Player " << _health << ", " << _power << endl;
+        cout << "Player0 " << _health << ", " << _power << endl;
     }
     Player0(int health, int power)
     {
         _health = health;
         _power = power;
 
-        cout << "Player " << _health << ", " << _power << endl;
+        cout << "Player0 " << _health << ", " << _power << endl;
     }
 };
 

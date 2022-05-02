@@ -1,3 +1,5 @@
+// 정적 결합, 동적 결합
+
 #include <iostream>
 #include "Animal.h"
 

@@ -1,3 +1,6 @@
+// 대입 연산자 오버로딩, 복사 생성자
+
+
 #include <iostream>
 #include "Vector.h"
 #include "String.h"

@@ -1,3 +1,7 @@
+// std vector
+// C++ STL의 sequence container 
+// vector 컨테이너는 자동으로 메모리가 할당되는 배열
+
 #include <iostream>
 #include <vector>
 
@@ -11,17 +15,17 @@ int main()
         vector<int> vec(10);
         for (int i = 0; i < vec.size(); ++i)
         {
-            cout << vec[i] << endl;
+            cout << "vec[i] : " << vec[i] << endl;
         }
     }
     {
         vector<int> vec(5, 2);
         for (int num : vec)
-            cout << num << endl;
+            cout << "num : " << num << endl;
 
         vec.resize(10, 20);
         for (int num : vec)
-            cout << num << endl;
+            cout << "num.resize : " << num << endl;
     }
     {
         vector<int> vec;
@@ -37,7 +41,7 @@ int main()
         {
             vec.push_back(i);
             cout << vec.size() << endl;
-            cout << vec.data() << endl; // 주소가 바뀐다(재할당이 발생)
+            cout <<  "vec.data() :  " << vec.data() << endl; // 주소가 바뀐다(재할당이 발생)
         }
     }
     {

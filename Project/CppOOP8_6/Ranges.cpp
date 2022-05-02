@@ -20,7 +20,7 @@ Ranges::Iterator::Iterator(unsigned num)
 {
 }
 
-Ranges::Iterator Ranges::Iterator::operator++()
+Ranges::Iterator Ranges::Iterator::operator++() // (???&??)
 {
     ++_num;
     return *this;

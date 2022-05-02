@@ -1,3 +1,5 @@
+//함수의 기본
+
 #include <iostream>
 
 using namespace std;

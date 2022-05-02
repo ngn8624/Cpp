@@ -1,6 +1,10 @@
 #include <iostream>
 #include <type_traits>
 
+// concepts
+// 템플릿 파마리터에 제약을 거는 아이
+// 컴파일 타임에 평가
+
 template<typename T>
 concept NonPointer = !std::is_pointer<T>::value;  // concept 을 이용하면 template 에 대한 제약을 쉽게 걸 수 있다
 
@@ -80,8 +84,8 @@ int main()
     int* py = &y;
 
     // 제약이 걸려 컴파일 되지 않음
-    //swap0(px, py);
-    //swap1(px, py);
+    swap0(px, py);
+    swap1(px, py);
 
     std::cout << Type::A;
 }

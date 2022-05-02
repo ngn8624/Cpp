@@ -16,7 +16,7 @@ public:
         _health = health;
         _power = power;
 
-        cout << "Player " << _health << ", " << _power << endl;
+        cout << "Player1 " << _health << ", " << _power << endl;
     }
 };
 

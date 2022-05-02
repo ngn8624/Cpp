@@ -1,3 +1,5 @@
+// 배열
+
 #include <iostream>
 
 using namespace std;
@@ -100,7 +102,9 @@ int main()
 
         // 함수를 이용한 복사
         memcpy(nums1, nums0, sizeof(nums0));
+        //cout << "nums1 : " << *nums1 << endl;
         memcpy(&nums1, &nums0, sizeof(nums0));
+        //cout << "nums1 : " << *nums1 << endl;
         copy(nums0, nums0 + 3, nums1);
     }
     {

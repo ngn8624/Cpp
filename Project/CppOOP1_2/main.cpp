@@ -1,3 +1,6 @@
+
+//클래스와 객체
+
 #include <iostream>
 
 using namespace std;
@@ -101,7 +104,7 @@ int main()
         
         daniel._health -= 300;
         // daniel의 health가 0 이하가 됐음에도 죽었다는 메시지가 발생하지 않음
-        // 멤버 변수를 노출하게 되면 이렇게 객체의 무결성이 깨지는 상태가 발생할 가능서잉 높아짐
+        // 멤버 변수를 노출하게 되면 이렇게 객체의 무결성이 깨지는 상태가 발생할 가능성이 높아짐
     }
     {
         Player4 david{ 200, 100, "David" };
@@ -112,3 +115,4 @@ int main()
         david.attack(daniel);
     }
 }
+

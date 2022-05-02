@@ -1,3 +1,5 @@
+// 변환 연산자 오버로딩, 변환 생성자
+
 #include <iostream>
 #include "BadPerson.h"
 #include "GoodPerson.h"

@@ -38,7 +38,8 @@ public:
 
     float getBMI()
     {
-        return weight / (height * 100 * height * 100);
+        float s = weight / (height * 100 * height * 100);
+        return s;
     }
 
 
@@ -60,8 +61,8 @@ public:
 
 void personFunc()
 {
-    Person david(67.3f, 172.3f, "david");
-    Person daniel(58.3f, 167.3f, "daniel");
+    Person david(33.3f, 172.3f, "david");
+    Person daniel(58.3f, 172.3f, "daniel");
 
     daniel.complete(david).doCeremony();
 }

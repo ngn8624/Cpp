@@ -1,3 +1,6 @@
+// 선언과 정의의 분리/ 전방 선언
+
+
 #include <iostream>
 #include "function.h"
 #include "Villiage.h"

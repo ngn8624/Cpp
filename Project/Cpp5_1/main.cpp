@@ -1,3 +1,4 @@
+// if문
 #pragma warning(disable: 4996)
 #include <iostream>
 
@@ -159,9 +160,9 @@ int main()
         // count += 1;
 
         // num0, num1 선언도 안에 넣을 수 있다(C++17 이상)
-        if (int num0, num1; int count = scanf("%d %d", &num0, &num1))
-            printf("count : %d\n", count);
-        else
-            printf("fail count : %d\n", count);
+        //if (int num0, num1; int count = scanf("%d %d", &num0, &num1))
+        //    printf("count : %d\n", count);
+        //else
+        //    printf("fail count : %d\n", count);
     }
 }

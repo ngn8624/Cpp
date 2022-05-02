@@ -1,3 +1,5 @@
+//std array
+
 #include <iostream>
 #include <array>
 
@@ -30,13 +32,13 @@ int main()
         cout << sizeof(arr0) / sizeof(arr0[0]) << endl;
 
         array<int, 3> arr1 = { 1, 2, 3 };
-        cout << arr1.size() << endl;
+        cout << "arr1.size() : " << arr1.size() << endl;
     }
     {
         // 배열의 가장 앞, 가장 뒤 원소 구하기
         array<int, 3> arr{ 1, 2, 3 };
         cout << arr[0] << endl;
-        cout << arr.front() << endl;
+        cout << "arr.front() : " << arr.front() << endl;
 
         cout << arr[arr.size() - 1] << endl;
         cout << arr.back() << endl;
@@ -47,6 +49,8 @@ int main()
 
         // 교환
         arr0.swap(arr1);
+        cout << "arr0[0] :  "  << arr0[0] << endl;
+
 
         // 대입 가능
         arr0 = arr1;

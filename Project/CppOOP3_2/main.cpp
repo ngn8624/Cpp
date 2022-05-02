@@ -1,3 +1,5 @@
+//가상함수
+
 #include <iostream>
 #include "Character.h"
 
